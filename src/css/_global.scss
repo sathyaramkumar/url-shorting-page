@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    outline: none;
+}
+
+ul , li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@mixin  flex($js , $ali) {
+    display: flex;
+    justify-content: $js;
+    align-items: $ali;
+}
+
+@mixin flex-row-col($direction , $js , $ali) {
+    display: flex;
+    justify-content: $js;
+    align-items: $ali;
+    flex-direction: $direction;
+}

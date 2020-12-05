@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+button {
+  outline: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 35px 30px;
+}
+
+.navbar .hamburger-menu {
+  width: 30px;
+  height: 35px;
+  background-color: transparent;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .hamburger-menu .hamburger-line {
+  height: 4px;
+  width: 100%;
+  background-color: #9e9aa7;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .hamburger-menu .hamburger-line::before {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: #9e9aa7;
+  position: absolute;
+  top: 12px;
+}
+
+.navbar .hamburger-menu .hamburger-line::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: #9e9aa7;
+  position: absolute;
+  top: -12px;
+}
+
+.navbar .navbar-nav {
+  display: none;
+  text-align: center;
+  background-color: white;
+}
+
+.navbar .navbar-nav .navs-1 .nav-item {
+  padding: 10px;
+}
+
+.navbar .navbar-nav .navs-1 .nav-item .nav-link {
+  color: #9e9aa7;
+}
+
+.navbar .navbar-nav .navs-1 .nav-item .nav-link:hover {
+  color: black;
+}
+
+.navbar .navbar-nav .navs-2 .nav-item {
+  padding: 10px;
+}
+
+.navbar .navbar-nav .navs-2 .nav-item .nav-link {
+  color: #9e9aa7;
+}
+
+.navbar .navbar-nav .navs-2 .nav-item .nav-link:hover {
+  color: black;
+}
+
+.navbar .navbar-nav .navs-2 .nav-item .nav-btn {
+  color: white;
+  border-radius: 30px;
+  padding: 6px 17px;
+  background-color: #2acfcf;
+}
+
+.navbar .navbar-nav .navs-2 .nav-item .nav-btn:hover {
+  background-color: rgba(42, 207, 207, 0.637);
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    width: 1200px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navbar .navbar-brand {
+    margin-right: 20px;
+  }
+  .navbar .hamburger-menu {
+    display: none;
+  }
+  .navbar .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navbar .navbar-nav .navs-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navbar .navbar-nav .navs-1 .nav-item {
+    margin-bottom: 7px;
+  }
+  .navbar .navbar-nav .navs-1 .nav-item .nav-link {
+    font-size: 13px;
+  }
+  .navbar .navbar-nav .navs-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    left: 600px;
+  }
+  .navbar .navbar-nav .navs-2 .nav-item {
+    margin-bottom: 6px;
+  }
+  .navbar .navbar-nav .navs-2 .nav-item .nav-link {
+    font-size: 13px;
+  }
+  .navbar .navbar-nav .navs-2 .nav-item .nav-btn {
+    font-size: 13px;
+  }
+}
+
+.hero-img {
+  margin-left: 30px;
+  width: 130vw;
+}
+
+.hero-content {
+  margin-top: 40px;
+}
+
+.hero-content .hero-title {
+  font-size: 45px;
+  line-height: 50px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

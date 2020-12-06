@@ -575,7 +575,7 @@ a {
   background-image: url(../images/bg-boost-mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 430px;
+  background-size: 100vw 90vh;
 }
 
 .boost-title {

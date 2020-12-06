@@ -1,9 +1,12 @@
 .hero {
     background-color: $white;
     .container {
-        .hero-img {
-            margin-left: 30px;
-            width: 130vw;
+        .crop-img {
+            overflow-x: hidden;
+            .hero-img {
+                margin-left: 30px;
+                width: 130vw;
+            }
         }
     
         .hero-content {
@@ -44,11 +47,14 @@
             height: 600px;
             width: 1130px;
             margin: auto;
-            .hero-img {
+            .crop-img {
+                overflow-x: visible;
                 order: 2;
-                width: 650px;
-                height: 450px;
-                margin-left: 200px;
+                .hero-img {
+                    width: 650px;
+                    height: 450px;
+                    margin-left: 200px;
+                }
             }
         
             .hero-content {

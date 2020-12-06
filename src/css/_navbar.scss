@@ -95,15 +95,6 @@
     }
 }
 
-.showNav {
-    transform: translateY(0);
-}
-
-.showClose {
-    background-image: url(../images/icons8-x-50.png);
-    background-repeat: no-repeat;
-}
-
 // desktop view 
 
 @media (min-width: 1200px) {

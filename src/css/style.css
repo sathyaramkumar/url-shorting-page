@@ -142,16 +142,6 @@ a {
   background-color: rgba(42, 207, 207, 0.637);
 }
 
-.showNav {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.showClose {
-  background-image: url(../images/icons8-x-50.png);
-  background-repeat: no-repeat;
-}
-
 @media (min-width: 1200px) {
   .navbar .container {
     width: 1200px;
@@ -244,7 +234,11 @@ a {
   background-color: white;
 }
 
-.hero .container .hero-img {
+.hero .container .crop-img {
+  overflow-x: hidden;
+}
+
+.hero .container .crop-img .hero-img {
   margin-left: 30px;
   width: 130vw;
 }
@@ -291,10 +285,13 @@ a {
     width: 1130px;
     margin: auto;
   }
-  .hero .container .hero-img {
+  .hero .container .crop-img {
+    overflow-x: visible;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .hero .container .crop-img .hero-img {
     width: 650px;
     height: 450px;
     margin-left: 200px;

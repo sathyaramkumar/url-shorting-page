@@ -1,0 +1,111 @@
+.url-input {
+    .url-form {
+        width: 85vw;
+        margin: -80px auto auto auto;
+        background-color: $darkViolet;
+        border-radius: 10px;
+        padding: 15px 10px;
+        background-image: url(../images/bg-shorten-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        &-input {
+            display: block;
+            width: 65vw;
+            height: 45px;
+            margin: 15px auto;
+            font-size: 18px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            color: $grayishViolet;
+            outline: none;
+        }
+        &-btn {
+            display: block;
+            margin: 15px auto;
+            width: 300px;
+            height: 45px;
+            background-color: $cyan;
+            border-radius: 10px;
+            color: $white;
+            font-weight: bolder;
+            font-size: 20px;
+            &:hover {
+                background-color: hsla(180, 66%, 49%, 0.699);
+            }
+        }
+    }
+    .suggestion-url {
+
+        display: none;
+        
+        .suggestion-field {
+            width: 85vw;
+            background-color: $white;
+            margin: 10px auto;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            &-title {
+                padding: 10px;
+            }
+            &-dropdown {
+                .suggestion-link {
+                    color: $cyan;
+                }
+                .suggestion-btn {
+                    padding: 5px 20px; 
+                    margin-left: 10px;
+                    background-color: $cyan;
+                    color: $white;
+                    border-radius: 5px;
+                    &:hover {
+                        background-color: hsla(180, 66%, 49%, 0.596);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .url-input {
+        .url-form {
+            width: 70vw;
+            padding: 50px 80px;
+            background-image: url(../images/bg-shorten-desktop.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 93vw;
+            &-input {
+                display: inline;
+                width: 45vw;
+
+            }
+            &-btn {
+                display: inline;
+                width: 10vw;
+                margin-left: 10px;
+            }
+        }
+        .suggestion-url {
+
+            display: none;
+
+            .suggestion-field {
+                width: 70vw;
+                @include flex-row-col(row , space-between , center);
+                &-title {
+                }
+                &-dropdown {
+                    .suggestion-link {
+                    }
+                    .suggestion-btn {
+                       
+                    }
+                }
+            }
+        }
+    }
+}

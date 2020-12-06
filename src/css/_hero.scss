@@ -1,28 +1,71 @@
 .hero {
-    &-img {
-        margin-left: 30px;
-        width: 130vw;
-    }
-
-    &-content {
-        margin-top: 40px;
-        .hero-title {
-            font-size: 45px;
-            line-height: 50px;
-            text-align: center;
+    background-color: $white;
+    .container {
+        .hero-img {
+            margin-left: 30px;
+            width: 130vw;
         }
-        .hero-text {}
-        .hero-btn {}
-        .hero-input-field {
-            .hero-form {
-                .form-input {}
-                .form-btn {}
+    
+        .hero-content {
+            margin-top: 40px;
+            text-align: center;
+            height: 450px;
+            .hero-title {
+                font-size: 45px;
+                line-height: 50px;
+                color: $veryDarkBlue;
             }
-            .suggestion-field {
-                &-title {}
-                &-dropdown {
-                    .suggestion-link {}
-                    .suggestion-btn {}
+            .hero-text {
+                color: $grayishViolet;
+                font-size: $font-body;
+                width: 80vw;
+                margin: 15px auto;
+            }
+            .hero-btn {
+                background-color: $cyan;
+                color: $white;
+                padding: 10px 35px;
+                margin: 10px auto;
+                border-radius: 50px;
+                font-weight: bolder;
+                font-size: $font-body;
+                &:hover {
+                    background-color: hsla(180, 66%, 49%, 0.514);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        .container {
+            display: flex;
+            height: 600px;
+            width: 1130px;
+            margin: auto;
+            .hero-img {
+                order: 2;
+                width: 650px;
+                height: 450px;
+                margin-left: 200px;
+            }
+        
+            .hero-content {
+                order: 1;
+                text-align: start;
+                margin-top: 100px;
+                .hero-title {
+                    font-size: 65px;
+                    width: 600px;
+                    line-height: 75px;
+                }
+                .hero-text {
+                    width: 500px;
+                    margin: 1px;
+                }
+                .hero-btn {
+                    margin-top: 30px;
                 }
             }
         }

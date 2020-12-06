@@ -1,0 +1,107 @@
+.advanced {
+    margin-top: 100px;
+    &-content {
+        text-align: center;
+        &-title {
+            font-size: 30px;
+        }
+        &-text {
+            font-size: $font-body;
+            color: $grayishViolet;
+            width: 80vw;
+            margin: 20px auto;
+        }
+    }
+    .multi-card {
+        .card {
+            text-align: center;
+            background-color: $white;
+            width: 85vw;
+            margin: 50px auto 0 auto;
+            padding: 10px 40px;
+            border-radius: 5px;
+            &:nth-child(1) {
+                margin-top: 100px;
+            }
+            &:last-child {
+                margin-bottom: 100px;
+            }
+            &-img {
+                @include flex-row-col(none , center , center);
+                background-color: $darkViolet;
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+                margin: -65px auto auto auto;
+                img {
+                    @include flex-row-col(none , center , center);
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            &-body {
+                margin-top: 30px;
+                .card-title {
+                    font-size: 25px;
+                }
+                .card-text {
+                    font-size: $font-body;
+                    color: $grayishViolet;
+                    padding: 30px 5px;
+                }
+            }
+        }
+        .card-connecting {
+            height: 60px;
+            width: 10px;
+            margin: auto;
+            background-color: $cyan;
+        }
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .advanced {
+        &-content {
+            &-title {
+            }
+            &-text {
+                width: 500px;
+            }
+        }
+        .multi-card {
+            @include flex-row-col(row , center , center);
+            margin-top: 30px;
+            .card {
+                width: 380px;
+                padding: 10px 30px 10px 30px;
+                text-align: left;
+                margin: 0;
+                &:nth-child(1) {
+                    margin-top: -150px;
+                }
+                &:last-child {
+                    margin-top: 200px;
+                }
+                &-img {
+                    margin-left: 0px;
+                    img {
+                    }
+                }
+                &-body {
+                    .card-title {
+                    }
+                    .card-text {
+                    }
+                }
+            }
+            .card-connecting {
+                width: 50px;
+                height: 10px;
+                margin: 0;
+            }
+        }
+    }
+}

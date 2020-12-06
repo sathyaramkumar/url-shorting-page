@@ -1,0 +1,114 @@
+.footer {
+    background-color: $veryDarkViolet;
+    padding: 50px 5px;
+    text-align: center;
+    .container {
+        background-color: $veryDarkViolet;
+        .footer-brand {
+            img {
+                padding-bottom: 30px;
+            }
+        }
+        .footer-feature {
+            
+            .feature-title {
+                color: $white;
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+            .feature-link {
+                color: $grayishViolet;
+                @include flex-row-col(column , center , center);
+                padding: 10px;
+                &:hover {
+                    color: $cyan;
+                }
+            }
+        }
+        .footer-resource {
+            .resource-title {
+                color: $white;
+                font-size: 20px;
+                padding: 30px 0 20px 0;
+            }
+            .resource-link {
+                color: $grayishViolet;
+                @include flex-row-col(column , center , center);
+                padding: 10px;
+                &:hover {
+                    color: $cyan;
+                }
+            }
+        }
+        .footer-company {
+            .company-title {
+                color: $white;
+                font-size: 20px;
+                padding: 30px 0 20px 0;
+            }
+            .company-link {
+                color: $grayishViolet;
+                @include flex-row-col(column , center , center);
+                padding: 10px;
+                &:last-child {
+                    padding-bottom: 40px;
+                }
+                &:hover {
+                    color: $cyan;
+                }
+            }
+        }
+    
+        .social-media {
+            &-link {
+                color: black;
+                padding: 10px;
+                svg path {
+                    transition: fill 1s;
+                }
+                &:hover svg path {
+                    fill: $cyan;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        .container {
+            display: grid;
+            grid-template-columns: 390px 230px 230px 230px 200px;
+            text-align: left;
+            width: 1300px;
+            margin: auto;
+            .footer-feature {
+                .feature-title {
+                    padding-bottom: 20px;
+                }
+                .feature-link {
+                    padding-left: 0;
+                    align-items: flex-start;
+                }
+            }
+            .footer-resource {
+                .resource-title {
+                    padding: 0px 0 20px 0;
+                }
+                .resource-link {
+                    padding-left: 0;
+                    align-items: flex-start;
+                }
+            }
+            .footer-company {
+                .company-title {
+                    padding: 0px 0 20px 0;
+                }
+                .company-link {
+                    padding-left: 0;
+                    align-items: flex-start;
+                }
+        }
+        }
+    }
+}

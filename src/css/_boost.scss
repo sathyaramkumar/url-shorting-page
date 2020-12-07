@@ -1,23 +1,23 @@
 .boost {
     text-align: center;
     background-color: $darkViolet;
-    padding: 100px 5px;
+    padding: 6.25rem 0.3125rem;
     background-image: url(../images/bg-boost-mobile.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100vw 90vh;
     &-title {
         color: $white;
-        font-size: 30px;
+        font-size: 1.875rem;
     }
     &-btn {
         background-color: $cyan;
-        padding: 10px 30px;
-        margin-top: 20px;
+        padding: 0.625rem 1.875rem;
+        margin-top: 1.25rem;
         color: $white;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: bolder;
-        border-radius: 50px;
+        border-radius: 3.125rem;
         &:hover {
             background-color: hsla(180, 53%, 70%, 0.753);
         }
@@ -26,10 +26,10 @@
 
 @media (min-width: 1200px) {
     .boost {
-        padding: 80px 5px;
+        padding: 5rem 0.3125rem;
         background-image: url(../images/bg-boost-desktop.svg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 1570px;
+        background-size: 98.125rem;
     }
 }

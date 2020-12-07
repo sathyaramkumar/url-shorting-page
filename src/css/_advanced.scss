@@ -1,15 +1,15 @@
 .advanced {
-    margin-top: 100px;
+    margin-top: 6.25rem;
     &-content {
         text-align: center;
         &-title {
-            font-size: 30px;
+            font-size: 1.875rem;
         }
         &-text {
             font-size: $font-body;
             color: $grayishViolet;
             width: 80vw;
-            margin: 20px auto;
+            margin: 1.25rem auto;
         }
     }
     .multi-card {
@@ -17,43 +17,43 @@
             text-align: center;
             background-color: $white;
             width: 85vw;
-            margin: 50px auto 0 auto;
-            padding: 10px 40px;
-            border-radius: 5px;
+            margin: 3.125rem auto 0 auto;
+            padding: 0.625rem 2.5rem;
+            border-radius: 0.3125rem;
             &:nth-child(1) {
-                margin-top: 100px;
+                margin-top: 6.25rem;
             }
             &:last-child {
-                margin-bottom: 100px;
+                margin-bottom: 6.25rem;
             }
             &-img {
                 @include flex-row-col(none , center , center);
                 background-color: $darkViolet;
-                width: 110px;
-                height: 110px;
+                width: 6.875rem;
+                height: 6.875rem;
                 border-radius: 50%;
-                margin: -65px auto auto auto;
+                margin: -4.0625rem auto auto auto;
                 img {
                     @include flex-row-col(none , center , center);
-                    width: 50px;
-                    height: 50px;
+                    width: 3.125rem;
+                    height: 3.125rem;
                 }
             }
             &-body {
-                margin-top: 30px;
+                margin-top: 1.875rem;
                 .card-title {
-                    font-size: 25px;
+                    font-size: 1.5625rem;
                 }
                 .card-text {
                     font-size: $font-body;
                     color: $grayishViolet;
-                    padding: 30px 5px;
+                    padding: 1.875rem 0.3125rem;
                 }
             }
         }
         .card-connecting {
-            height: 60px;
-            width: 10px;
+            height: 3.75rem;
+            width: 0.625rem;
             margin: auto;
             background-color: $cyan;
         }
@@ -68,25 +68,25 @@
             &-title {
             }
             &-text {
-                width: 500px;
+                width: 31.25rem;
             }
         }
         .multi-card {
             @include flex-row-col(row , center , center);
-            margin-top: 30px;
+            margin-top: 1.875rem;
             .card {
-                width: 380px;
-                padding: 10px 30px 10px 30px;
+                width: 23.75rem;
+                padding: 0.625rem 1.875rem 0.625rem 1.875rem;
                 text-align: left;
                 margin: 0;
                 &:nth-child(1) {
-                    margin-top: -150px;
+                    margin-top: -9.375rem;
                 }
                 &:last-child {
-                    margin-top: 200px;
+                    margin-top: 12.5rem;
                 }
                 &-img {
-                    margin-left: 0px;
+                    margin-left: 0;
                     img {
                     }
                 }
@@ -98,8 +98,8 @@
                 }
             }
             .card-connecting {
-                width: 50px;
-                height: 10px;
+                width: 3.125rem;
+                height: 0.625rem;
                 margin: 0;
             }
         }

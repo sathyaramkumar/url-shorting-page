@@ -1,36 +1,36 @@
 .url-input {
     .url-form {
         width: 85vw;
-        margin: -80px auto auto auto;
+        margin: -5rem auto auto auto;
         background-color: $darkViolet;
-        border-radius: 10px;
-        padding: 15px 10px;
+        border-radius: 0.625rem;
+        padding: 0.9375rem 0.625rem;
         background-image: url(../images/bg-shorten-mobile.svg);
         background-repeat: no-repeat;
         background-position: top right;
         &-input {
             display: block;
             width: 65vw;
-            height: 45px;
-            margin: 15px auto;
-            font-size: 18px;
-            padding: 10px 15px;
+            height: 2.8125rem;
+            margin: 0.9375rem auto;
+            font-size: 1.125rem;
+            padding: 0.625rem 0.9375rem;
             border: none;
-            border-radius: 10px;
+            border-radius: 0.625rem;
             font-family: 'Poppins', sans-serif;
             color: $grayishViolet;
             outline: none;
         }
         &-btn {
             display: block;
-            margin: 15px auto;
+            margin: 0.9375rem auto;
             width: 65vw;
-            height: 45px;
+            height: 2.8125rem;
             background-color: $cyan;
-            border-radius: 10px;
+            border-radius: 0.625rem;
             color: $white;
             font-weight: bolder;
-            font-size: 20px;
+            font-size: 1.25rem;
             &:hover {
                 background-color: hsla(180, 66%, 49%, 0.699);
             }
@@ -43,23 +43,23 @@
         .suggestion-field {
             width: 85vw;
             background-color: $white;
-            margin: 10px auto;
+            margin: 0.625rem auto;
             text-align: center;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 0.625rem;
+            border-radius: 0.3125rem;
             &-title {
-                padding: 10px;
+                padding: 0.625rem;
             }
             &-dropdown {
                 .suggestion-link {
                     color: $cyan;
                 }
                 .suggestion-btn {
-                    padding: 5px 20px; 
-                    margin-left: 10px;
+                    padding: 0.3125rem 1.25rem; 
+                    margin-left: 0.625rem;
                     background-color: $cyan;
                     color: $white;
-                    border-radius: 5px;
+                    border-radius: 0.3125rem;
                     &:hover {
                         background-color: hsla(180, 66%, 49%, 0.596);
                     }
@@ -86,7 +86,7 @@
             &-btn {
                 display: inline;
                 width: 10vw;
-                margin-left: 10px;
+                margin-left: 0.625rem;
             }
         }
         .suggestion-url {

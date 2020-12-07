@@ -1,25 +1,25 @@
 .footer {
     background-color: $veryDarkViolet;
-    padding: 50px 5px;
+    padding: 3.125rem 0.3125rem;
     text-align: center;
     .container {
         background-color: $veryDarkViolet;
         .footer-brand {
             img {
-                padding-bottom: 30px;
+                padding-bottom: 1.875rem;
             }
         }
         .footer-feature {
             
             .feature-title {
                 color: $white;
-                font-size: 20px;
-                padding-bottom: 20px;
+                font-size: 1.25rem;
+                padding-bottom: 1.25rem;
             }
             .feature-link {
                 color: $grayishViolet;
                 @include flex-row-col(column , center , center);
-                padding: 10px;
+                padding: 0.625rem;
                 &:hover {
                     color: $cyan;
                 }
@@ -28,13 +28,13 @@
         .footer-resource {
             .resource-title {
                 color: $white;
-                font-size: 20px;
-                padding: 30px 0 20px 0;
+                font-size: 1.25rem;
+                padding: 1.875rem 0 1.25rem 0;
             }
             .resource-link {
                 color: $grayishViolet;
                 @include flex-row-col(column , center , center);
-                padding: 10px;
+                padding: 0.625rem;
                 &:hover {
                     color: $cyan;
                 }
@@ -43,15 +43,15 @@
         .footer-company {
             .company-title {
                 color: $white;
-                font-size: 20px;
-                padding: 30px 0 20px 0;
+                font-size: 1.25rem;
+                padding: 1.875rem 0 1.25rem 0;
             }
             .company-link {
                 color: $grayishViolet;
                 @include flex-row-col(column , center , center);
-                padding: 10px;
+                padding: 0.625rem;
                 &:last-child {
-                    padding-bottom: 40px;
+                    padding-bottom: 2.5rem;
                 }
                 &:hover {
                     color: $cyan;
@@ -62,7 +62,7 @@
         .social-media {
             &-link {
                 color: black;
-                padding: 10px;
+                padding: 0.625rem;
                 svg path {
                     transition: fill 1s;
                 }
@@ -78,13 +78,13 @@
     .footer {
         .container {
             display: grid;
-            grid-template-columns: 390px 230px 230px 230px 200px;
+            grid-template-columns: 24.375rem 14.375rem 14.375rem 14.375rem 12.5rem;
             text-align: left;
-            width: 1300px;
+            width: 81.25rem;
             margin: auto;
             .footer-feature {
                 .feature-title {
-                    padding-bottom: 20px;
+                    padding-bottom: 1.25rem;
                 }
                 .feature-link {
                     padding-left: 0;
@@ -93,7 +93,7 @@
             }
             .footer-resource {
                 .resource-title {
-                    padding: 0px 0 20px 0;
+                    padding: 0px 0 1.25rem 0;
                 }
                 .resource-link {
                     padding-left: 0;
@@ -102,7 +102,7 @@
             }
             .footer-company {
                 .company-title {
-                    padding: 0px 0 20px 0;
+                    padding: 0px 0 1.25rem 0;
                 }
                 .company-link {
                     padding-left: 0;
